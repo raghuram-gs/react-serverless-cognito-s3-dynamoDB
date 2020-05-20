@@ -1,10 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Nav, NavItem } from "react-bootstrap";
 import "./App.css";
 import Routes from "./Routes";
+import { AppContext } from "./libs/contextLib";
 
 function App() {
+
+  const [isAuthenticated, userHasAuthenticated] = useState(false);
+
   return (
     <div className="App container">
       <header>
@@ -26,12 +30,14 @@ function App() {
         </Navbar.Collapse>
 
       </Navbar>
- 
-      <Routes />
-      
+
+      <AppContext.Provider value={{ isAuthenticated, userHasAuthenticated }}>
+        <Routes />
+      </AppContext.Provider>
+
       <footer>
-      @Copyright 2020
-      Raghuram
+        @Copyright 2020
+        Raghuram
       </footer>
     </div>
 
