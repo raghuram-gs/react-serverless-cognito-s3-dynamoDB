@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import Login from "./components/Login";
+import PageNotFound from "./components/PageNotFound";
 
 export default function Routes() {
   return (
@@ -12,7 +13,7 @@ export default function Routes() {
       <Route exact path="/login">
         <Login />
       </Route>
-
+      <PageNotFound/>
     </Switch>
   );
 }
