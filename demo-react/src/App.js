@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Nav, NavItem } from "react-bootstrap";
 import "./App.css";
@@ -18,15 +18,29 @@ function App() {
       <Navbar fluid>
         <Navbar.Header>
           <Navbar.Brand>
-            <Link to="/">AWS Learning</Link>
+            <Link to="/">AWS Master</Link>
           </Navbar.Brand>
         </Navbar.Header>
 
         <Navbar.Collapse>
+          
+          <Nav>
+            <NavItem>
+              <Link to="/study">Study material</Link>
+            </NavItem>
+            <NavItem>
+              <Link to="/notes">Take notes</Link>
+            </NavItem>
+            <NavItem>
+              <Link to="/design">Design</Link>
+            </NavItem>
+          </Nav>
+
           <Nav pullRight>
             <NavItem href="/signup">Signup</NavItem>
             <NavItem href="/login">Login</NavItem>
           </Nav>
+
         </Navbar.Collapse>
 
       </Navbar>

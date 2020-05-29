@@ -1,17 +1,17 @@
 export default {
     s3: {
-      REGION: "YOUR_S3_UPLOADS_BUCKET_REGION",
-      BUCKET: "YOUR_S3_UPLOADS_BUCKET_NAME"
+      REGION: "ap-southeast-2",
+      BUCKET: "raggyfiles"
     },
     apiGateway: {
-      REGION: "YOUR_API_GATEWAY_REGION",
-      URL: "YOUR_API_GATEWAY_URL"
+      REGION: "ap-southeast-2",
+      URL: "https://cw4yzd90d9.execute-api.ap-southeast-2.amazonaws.com/prod/"
     },
     cognito: {
-      REGION: "YOUR_COGNITO_REGION",
-      USER_POOL_ID: "YOUR_COGNITO_USER_POOL_ID",
-      APP_CLIENT_ID: "YOUR_COGNITO_APP_CLIENT_ID",
-      IDENTITY_POOL_ID: "YOUR_IDENTITY_POOL_ID"
+      REGION: "ap-southeast-2",
+      USER_POOL_ID: "ap-southeast-2_otrMozxOd",
+      APP_CLIENT_ID: "757u1q119kba355lm6bcqmouod",
+      IDENTITY_POOL_ID: "ap-southeast-2:8f59fbec-d79f-4178-bc28-25a919e19a94"
     }
   };
   
