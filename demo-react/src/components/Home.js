@@ -82,6 +82,5 @@ export default function Home() {
     <div className="Home">
       {isAuthenticated ? renderNotes() : renderLander()}
     </div>
-
   );
 }

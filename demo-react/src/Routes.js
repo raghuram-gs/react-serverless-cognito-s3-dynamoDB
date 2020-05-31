@@ -7,6 +7,7 @@ import Signup from "./components/Signup";
 import NewNote from "./components/NewNote";
 import TopicContainer from "./components/studyMaterial/TopicContainer";
 import Design from "./components/design/Design";
+import Notes from "./components/Notes";
 
 export default function Routes() {
   return (
@@ -22,6 +23,9 @@ export default function Routes() {
       </Route>
       <Route exact path="/notes/new">
         <NewNote />
+      </Route>
+      <Route exact path="/notes/:id">
+        <Notes />
       </Route>
       <Route exact path="/study">
         <TopicContainer />
