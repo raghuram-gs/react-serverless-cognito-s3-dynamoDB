@@ -6,6 +6,7 @@ import PageNotFound from "./components/PageNotFound";
 import Signup from "./components/Signup";
 import NewNote from "./components/NewNote";
 import TopicContainer from "./components/studyMaterial/TopicContainer";
+import Design from "./components/design/Design";
 
 export default function Routes() {
   return (
@@ -24,6 +25,9 @@ export default function Routes() {
       </Route>
       <Route exact path="/study">
         <TopicContainer />
+      </Route>
+      <Route exact path="/design">
+        <Design />
       </Route>
       <PageNotFound />
     </Switch>

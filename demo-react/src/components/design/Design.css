@@ -1,0 +1,57 @@
+.designContainer{
+    display: flex;
+    padding: 10px 10px;
+    margin: 10px;
+    justify-content: space-around;
+    height: calc(100% - 220px);;
+}
+
+.section{
+    display: flex;    
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    border: orangered solid 3px ;
+    margin: 15px;    
+    justify-content: stretch;
+}
+
+.section > h1{
+    padding: 15px 15px;
+    font-size: 20px;
+    background-color: orangered;
+    text-align: center;
+}
+
+.design{
+    width: 800px;
+}
+
+.suggestions{
+    flex-direction: column;
+    justify-content: stretch;
+    flex-wrap: wrap;
+}
+
+.subgroup{
+    display: flex;
+    flex-direction: column;    
+    justify-content: stretch;    
+}
+
+.sub{
+    display: inline-block;
+    width: 100%;
+    flex-direction: column;    
+    padding: 10px;
+}
+
+.sub h1{
+    font-size: 16px;
+}
+
+
+
+
+
+
