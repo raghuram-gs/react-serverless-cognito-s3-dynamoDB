@@ -86,6 +86,7 @@ export default function Signup() {
           block
           type="submit"
           bsSize="large"
+          bsStyle="success"
           isLoading={isLoading}
           disabled={!validateConfirmationForm()}
         >
@@ -127,6 +128,7 @@ export default function Signup() {
           block
           type="submit"
           bsSize="large"
+          bsStyle="success"
           isLoading={isLoading}
           disabled={!validateForm()}
         >

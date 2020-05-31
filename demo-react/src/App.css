@@ -1,3 +1,7 @@
+html, body, #root, .App {
+  height: 100%;
+}
+
 .App {
   margin-top: 15px;
 }
@@ -7,17 +11,26 @@
 }
 
 header{
+  display: flex;
   height: 100px;
-  background-color: black;
+  background-color: #212529;
+  align-items: center;
   justify-content: center;
   align-items: center;
-  font-size: x-large;
   color: orangered;
+  color: white;
+  width: 100%;
+  font-weight: bolder;
 }
 
 footer{
   height: 50px;
-  background-color: black;
+  background-color: #212529;
   color: white;
-
+  width: inherit;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

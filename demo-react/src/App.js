@@ -41,7 +41,7 @@ function App() {
     !isAuthenticating &&
     <div className="App container">
       <header>
-        <h1>AWS Interactive Challenges</h1>
+        <h1>AWS Master</h1>
       </header>
 
       <Navbar fluid>
